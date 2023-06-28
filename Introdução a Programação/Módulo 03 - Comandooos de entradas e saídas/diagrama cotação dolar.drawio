@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2023-06-21T17:47:54.658Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="mGK0p15CfL75mFG9Sh6Y" version="21.5.0" type="device">
+  <diagram name="Página-1" id="b0lWvYYujPtVWWT7_rLK">
+    <mxGraphModel dx="1050" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CH-Ta-xup4o2wQbhwkUd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CH-Ta-xup4o2wQbhwkUd-1" target="CH-Ta-xup4o2wQbhwkUd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CH-Ta-xup4o2wQbhwkUd-1" value="inicio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CH-Ta-xup4o2wQbhwkUd-3" value="Qual valor quer converter ?" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="150" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CH-Ta-xup4o2wQbhwkUd-8" value="Qual o valor do dolar hoje ?" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CH-Ta-xup4o2wQbhwkUd-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.48;exitY=0.934;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CH-Ta-xup4o2wQbhwkUd-3" target="CH-Ta-xup4o2wQbhwkUd-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="270" as="sourcePoint" />
+            <mxPoint x="420" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="414" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

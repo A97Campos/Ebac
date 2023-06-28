@@ -1,0 +1,7 @@
+O HTML, CSS e JavaScript se completam, enquanto o HTML e CSS dão estrutura e estilização respectivamente a uma página web, o JavaScript da a interatividade a página.
+
+O HTML é fundamental para a página web, pois ele da a estrutura e o conteúdo de uma página.
+
+Com o CSS você consegue mudar cores, fontes, centralizar fotos etc, consegue fazer toda a estilização de uma página.
+
+JavaScript é uma linguagem de programação que vai dar a interatividade a página, com ele se consegue fazer validação de formulário, animações etc.
