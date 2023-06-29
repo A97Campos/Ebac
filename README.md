@@ -1,2 +1,2 @@
 # Exercicios
- Aqui estarão as tarefas feitas
+Os exercícios concluídos estarão na pasta de mesmo nome.
