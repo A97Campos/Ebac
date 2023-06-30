@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    
+}
+
+#cabecalho {
+    background-color: rgb(40, 39, 39);
+    color: white;    
+}
+
+#cabecalho header {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    padding: 18px 0px;
+}
+
+#cabecalho ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#cabecalho a {
+    padding-left: 10px;
+    color: white;
+}
+
+#cabecalho a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    width: 1000px;
+    margin: auto;
+}
+
+#mudarCorEs {
+    background-color: rgba(0, 128, 0, 0.148);
+}
+
+section h2 {
+    margin: 0px 0px 10px 0px;
+    padding-top: 10px;
+}
+
+section div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 300px;
+    margin: 0px 18px 20px 0px;
+}
+
+article img {
+    width: 300px;
+}
+
+article h3 {
+    margin: 8px 0px;
+}
+
+article a {
+    background-color: rgba(0, 128, 0, 0.547);
+    color: white;
+    display: inline-block;  
+    padding: 8px;  
+    margin-top: 8px;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+#mudarCorEc {
+    background-color: rgba(255, 255, 0, 0.256);
+}
+
+#mudarCorEc a{
+    background-color: rgba(255, 255, 0, 0.747);
+}
+
+#mudarCorTec {
+    background-color: rgba(0, 0, 255, 0.166);
+}
+
+#mudarCorTec a{
+    background-color: rgba(0, 0, 255, 0.714);
+}
+
+#mudarCorEn {
+    background-color: rgba(255, 166, 0, 0.407);
+}
+
+#mudarCorEn a {
+    background-color: orange;
+}
