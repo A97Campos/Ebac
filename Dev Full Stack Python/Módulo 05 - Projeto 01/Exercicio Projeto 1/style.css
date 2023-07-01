@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Bungee', cursive;
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;}
+
+body {
+    background-color: #0F0F0F;
+}
+
+img {
+    width: 400px;
+}
+
+header div{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    padding: 10px;
+}
+
+.containers {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+.containers p, .containers h2 {
+    padding: 0px 20px;
+}
+
+footer {
+    width: 1000px;
+    margin: auto;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario {
+    margin-right: 30px;
+}
+
+footer input, #areatxt {
+    color: #0F0F0F;
+}
+
+footer p {
+    padding: 20px 0px;
+}
+
+#areatxt {
+    resize: none;
+    height: 200px;
+    margin-bottom: 13px;
+}
+
+button {
+    background-color: #484242;
+    border: none;
+    cursor: pointer;
+}
+
