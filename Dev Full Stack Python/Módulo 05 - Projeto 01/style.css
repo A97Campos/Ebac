@@ -73,6 +73,14 @@ main {
     margin-bottom: 8px;
 }
 
+#areatxt {
+    resize: none;
+}
+
+input:focus, #areatxt:focus {/*mudar a cor quando selecionado*/
+    outline-color: #182C61;
+}
+
 #botao {
     padding: 10px;
     font-family: 'Bungee', cursive;

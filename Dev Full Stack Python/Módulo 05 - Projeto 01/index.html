@@ -42,10 +42,10 @@
                 <article>
                     <h3>Fale conosco</h3>
                     <form>
-                        <input type="text" name="nome" id="nome" class="input" placeholder="Seu nome"><br>
-                        <input type="email" name="email" id="email" class="input" placeholder="Seu email"><br>
-                        <input type="tel" name="telefone" id="telefone"class="input" placeholder="Seu telefone(opcional)"><br>
-                        <textarea name="areatxt" id="areatxt" class="input" cols="30" rows="10" placeholder="Sua mensagem"></textarea><br>
+                        <input type="text" name="nome" id="nome" class="input" placeholder="Seu nome" minlength="3" required><br>
+                        <input type="email" name="email" id="email" class="input" placeholder="Seu email" required><br>
+                        <input type="tel" name="telefone" id="telefone"class="input" placeholder="Seu telefone(opcional)" minlength="11" maxlength="14"><br>
+                        <textarea name="areatxt" id="areatxt" class="input" cols="30" rows="10" placeholder="Sua mensagem" required></textarea><br>
                         <button type="submit" id="botao">Enviar</button>
                     </form>
                 </article>
