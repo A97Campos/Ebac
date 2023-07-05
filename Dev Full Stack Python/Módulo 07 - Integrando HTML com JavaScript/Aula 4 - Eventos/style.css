@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+}
+
+div {
+    margin: auto;
+    border: 1px solid black;
+}
+
+#incorreto {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+input, textarea{
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#btnEnviar {
+    background-color: rgb(41, 231, 41);
+    color: white;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    cursor: pointer;
+}
