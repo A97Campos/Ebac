@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+        <header>
+            <img src="imagens/icons8-telefone-30.png" alt="">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <main>
+            <form>
+                <input type="text" name="nome" id="inputNome" placeholder="Nome do contato" required>
+                <input type="tel" name="telefone" id="inputTelefone" placeholder="Digite o Telefone" required min="11" max="13">
+                <p id="erro"></p>
+                <button type="submit" id="adicionar">Adicionar +</button>
+                <button type="reset" id="excluir">Excluir</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome:</th>
+                        <th>Telefone:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </main>  
+
+        <script src="main.js"></script>
+    
+</body>
+</html>

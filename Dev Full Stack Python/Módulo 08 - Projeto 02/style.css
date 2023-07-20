@@ -46,12 +46,16 @@ table {
 }
 
 table td {
-    padding: 8px;
+    padding: 10px;
 }
 
 thead th {
     border-bottom: 2px solid black;
     width: 200px;
+}
+
+tbody tr td img{
+    width: 30px;
 }
 
 table tr {
@@ -63,10 +67,13 @@ tfoot {
 }
 
 .aprovado {
-    background-color: greenyellow;
+    background-color: rgb(101, 166, 2);
     color: white;
+    padding: 8px;
 }
 
 .reprovado {
     background-color: rgb(255, 61, 61);
+    color: white;
+    padding: 8px;
 }
