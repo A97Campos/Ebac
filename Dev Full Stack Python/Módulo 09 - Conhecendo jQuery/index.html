@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>jQuery</title>
+</head>
+<body>
+
+  <header>
+    <h1>Galeria de fotos</h1>
+    <button type="submit" class="btn">Nova imagem +</button>
+  </header>
+
+  <main>
+    <section id="corpo">
+      <h2>Inserir nova imagem</h2>
+      <form>
+        <input type="url" name="url" id="url" required placeholder="Digite o url">
+        <button type="submit" id="btn-enviar" class="btn">Enviar</button>
+        <button type="reset" id="btn-cancelar" class="btn">Cancelar</button>
+      </form>
+    </section>
+
+    <section id="imagens">
+      <ul>
+          <li>
+            <img src="images_M9/images/foto1.jpg" alt="imagem de um gato">
+            <div class="legenda">
+              <a href="images_M9/images/foto1.jpg" target="_blank">Veja a imagem em tamanho real</a>
+            </div>
+          </li>
+
+          <li>            
+            <img src="images_M9/images/foto2.jpg" alt="imagem de um flamingo">
+            <div class="legenda">
+              <a href="images_M9/images/foto2.jpg" target="_blank">Veja a imagem em tamanho real</a>
+            </div>
+          </li>
+          
+          <li>
+            <img src="images_M9/images/foto3.jpg" alt="imagem de um cachorro">
+            <div class="legenda">
+              <a href="images_M9/images/foto3.jpg" target="_blank">Veja a imagem em tamanho real</a>
+            </div>
+          </li>
+      </ul>
+    </section>
+
+    
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

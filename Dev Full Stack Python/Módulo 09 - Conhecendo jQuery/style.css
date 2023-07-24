@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/*geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*cabeçalho e botões*/
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: blueviolet;
+    color: white;
+    border-bottom: 15px solid rgb(102, 36, 163);
+}
+
+.btn {
+    margin-left: 15px;
+    padding: 8px;
+    background-color: rgb(33, 163, 33);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#corpo {
+    background-color: rgb(209, 209, 229);
+    text-align: center;
+    padding: 15px 0px;
+    display: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+form input{
+    padding: 5px;
+}
+
+#btn-cancelar {
+    background-color: rgb(249, 49, 49);
+}
+
+/*imagens*/
+
+#imagens {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#imagens ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#imagens ul li {
+    position: relative;
+    margin-left: 10px;
+}
+
+#imagens img {
+    width: 230px;
+    height: 170px;
+}
+
+.legenda {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.695);
+    width: 100%;
+    padding: 8px;
+    opacity: 0;
+}
+
+ul li:hover .legenda {
+    opacity: 1;
+    transition: 1s;
+}
+
+.legenda a {
+    color: white;
+    font-size: .7em;
+}
