@@ -50,9 +50,13 @@ button {
     padding: 20px;
 }
 
-#lista ul li {
+#lista li {
     padding: 10px;
     border-bottom: 1px solid white;
     border-collapse: collapse;
     cursor: pointer;
+}
+
+.add-riscado {
+    text-decoration: line-through;
 }

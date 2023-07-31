@@ -1,10 +1,15 @@
 $(document).ready(function(){
     $("#btn-enviar").click(function(){
-        let adicionarTarefa = $("#adicionar-tarefa").val();
-        let novoItem = `<ul>
-        <li>${adicionarTarefa}</li>
-        </ul>`
-        $(novoItem).appendTo("#lista");
+        let adicionarTarefa = $("#adicionar-tarefa").val().trim();
+        if (adicionarTarefa !== ""){
+            let novoItem = `<li>${adicionarTarefa}</li>`
+            $(novoItem).appendTo("#lista");
+            $("#adicionar-tarefa").val("")
+        }
+        $("li").click(function(){
+            $(this).toggleClass("add-riscado");
+        })
+        
     })
 })
 
@@ -28,6 +33,7 @@ form.addEventListener("submit", function(valida){
 
     corpo.innerHTML = linhas;
 
+    adicionarTarefa.value = "";
 });
 
 corpo.addEventListener("click", function(){
