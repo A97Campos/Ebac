@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: blue;
+    color: white;
+}
+
+.cabecalho-note{
+    display: none;
+}
+header a {
+    color: white;
+}
+
+header .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+header nav  {
+    display: none;
+    position: absolute;
+}
+
+header ul {
+    display: flex;
+    background-color: blue;
+}
+
+header ul li {
+    width: 150px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border-top: 4px solid white;
+}
+
+/* Sobre a loja */
+
+#sobre-a-loja {
+    margin-top: 30px;
+}
+
+#sobre-a-loja img {
+    max-width: 100%;
+}
+
+#sobre-a-loja p {
+    padding-top: 20px;
+}
+
+h2 {
+    padding: 20px 0 10px 0;
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+
+/* Produtos */
+
+#produtos img{
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+#produtos h3 {
+    padding: 15px 0;
+}
+
+#produtos p {
+    padding-bottom: 15px;
+}
+
+#produtos button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 641px) {
+    #sobre-a-loja img {
+        margin: auto;
+        width: 100%;
+    }
+
+    #produtos div {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 6%;
+    }
+
+    #produtos img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .cabecalho-mobile {
+        display: none;
+    }
+
+    .cabecalho-note {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    #sobre-a-loja {
+       display: flex;
+    }
+
+    #sobre-a-loja div{
+        margin-left: 30px;
+    }
+
+    #produtos div {
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        gap: 4%;
+    }
+}
