@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-3">
+        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">Abrir Modal</button>
+    </div>
+
+    <div class="modal" id="meuModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Meu Modal</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis, porro saepe, quam nulla omnis aut obcaecati ullam excepturi vitae suscipit ipsam? Incidunt quidem corrupti natus quisquam delectus debitis eveniet.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const meuModal = new bootstrap.Modal("#meuModal");
+            setTimeout(function(){
+                meuModal.show();
+            }, 3000)          
+        
+        })
+    </script>
+</body>
+</html>
