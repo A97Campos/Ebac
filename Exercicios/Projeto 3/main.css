@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulos {
+    font-family: pacifico, sans-serif;
+}
+
+.text-colored {
+    color: #e25f41;
+}
+
+/* Header */
+
+header {
+    background-color: #e25f41;
+}
+
+.nav-link, .navbar-brand, .navbar-brand:hover, .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active{
+    background-color: #fff;
+    color: #e25f41;
+}
+
+/* Sobre o Restaurante */
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #ffeae6;
+}
+
+#carrosel img {
+    width: 100%;
+}
+
+/* Cardápio */
+
+.nav-cardapio .nav-link {
+    color: #e25f41;
+}
+
+.nav-cardapio .nav-link.active{
+    background-color: #e25f41;
+}
+
+/* Fale conosco*/
+
+#fale-conosco button {
+    background-color: #e25f41;
+    color: #fff;
+}
+
+#fale-conosco ul li {
+    list-style-type: none;
+    display: inline;
+}
