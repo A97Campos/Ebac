@@ -1,70 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "geral.scss";
+ *   | ^^^^^^^^^^^^^^^^^
+ *   '
+ *   source\input.scss 1:1  root stylesheet */
 
-body {
-  background-color: #34495e;
-  color: #bdc3c7;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"geral.scss\";\d\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   source\\input.scss 1:1  root stylesheet";
 }
-body header {
-  padding: 20px 0;
-  text-align: center;
-  border-bottom: 3px solid #7f8c8d;
-}
-body main {
-  height: 60vh;
-}
-body main section {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-body main section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-body main section form {
-  margin: auto;
-  max-width: 300px;
-}
-body main section form div {
-  margin-bottom: 10px;
-}
-body main section form div label {
-  cursor: pointer;
-}
-body main section form div input {
-  outline: none;
-  border: none;
-  border-bottom: 3px solid #7f8c8d;
-  background-color: #34495e;
-  width: 100%;
-  padding: 5px 0;
-  font-size: 1.1em;
-}
-body main section form button {
-  padding: 8px;
-  font-weight: bolder;
-  font-size: 1.2em;
-  width: 100%;
-  cursor: pointer;
-  background-color: #bdc3c7;
-  color: #34495e;
-  border: none;
-}
-body main section form button:hover {
-  background-color: #7f8c8d;
-  transition: 1s;
-}
-
-@media screen and (min-width: 760px) {
-  section h2 {
-    font-size: 2.5em;
-  }
-}
-
-/*# sourceMappingURL=output.css.map */
