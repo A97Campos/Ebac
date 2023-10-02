@@ -1,0 +1,22 @@
+@use "../config/cores.scss";
+
+#primeira {
+    h1 {
+        color: cores.$corDeTexto;
+    }
+
+    button{
+        background-color: cores.$corDoBtn;
+        color: cores.$corDeTexto;
+        padding: 8px;
+        border: none;
+
+        &:hover {
+            background-color: cores.$corDoBtnHover;
+        }
+    }
+}
+
+#segunda {
+    background-color: red;
+}

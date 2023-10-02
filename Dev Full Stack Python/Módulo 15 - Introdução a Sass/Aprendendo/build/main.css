@@ -1,0 +1,28 @@
+#primeira h1 {
+  color: rgb(154, 154, 219);
+}
+#primeira button {
+  background-color: rgb(94, 94, 125);
+  color: rgb(154, 154, 219);
+  padding: 8px;
+  border: none;
+}
+#primeira button:hover {
+  background-color: rgb(133, 133, 177);
+}
+
+#segunda {
+  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Os exercícios concluídos estarão na pasta de mesmo nome.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a97campos/Ebac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a97campos/Ebac/issues"
+  },
+  "homepage": "https://github.com/a97campos/Ebac#readme",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}

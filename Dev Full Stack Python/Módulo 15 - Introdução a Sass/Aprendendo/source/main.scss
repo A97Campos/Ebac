@@ -1,0 +1,7 @@
+@use "../source/config/cores.scss";
+@use "../source/secoes/sections.scss";
+@use "../source/config/reset.scss";
+
+body {
+    background-color: cores.$corDeFundo;
+}

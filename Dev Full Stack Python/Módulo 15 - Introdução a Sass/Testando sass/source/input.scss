@@ -1,0 +1,77 @@
+@use "geral.scss";
+@use "cores.scss";
+
+body {
+    background-color: cores.$corDeFundo;
+    color: cores.$corDoTexto;
+
+    header {
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 3px solid cores.$corDaBorda;
+    }
+
+    main {
+        height: 60vh;
+
+        section {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h2 {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                form {
+                    margin: auto;
+                    max-width: 300px;
+
+                    div {
+                        margin-bottom: 10px;
+
+                        label {
+                            cursor: pointer;
+                        }
+
+                        input {
+                            outline: none;
+                            border: none;
+                            border-bottom: 3px solid cores.$corDaBorda;
+                            background-color: cores.$corDeFundo; 
+                            width: 100%;   
+                            padding: 5px 0;
+                            font-size: 1.1em;
+                        }
+                    }
+
+                    button {
+                        padding: 8px;
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                        width:100%;
+                        cursor: pointer;
+                        background-color: cores.$corDoTexto;
+                        color: cores.$corDeFundo;
+                        border: none;
+
+                        &:hover {
+                            background-color: cores.$corDaBorda;
+                            transition: 1s;
+                        }
+                    }
+
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    section{
+        h2 {
+            font-size: 2.5em;
+        }
+    }
+}
