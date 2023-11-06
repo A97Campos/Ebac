@@ -1,0 +1,43 @@
+@use "cores";
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: cores.$corTxt;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+    color: cores.$corTitulo;
+}
+
+.link-text {
+    @include text(18px);
+    color: cores.$corTxt;
+    text-decoration: underline;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: cores.$corTitulo;
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(28px)
+}

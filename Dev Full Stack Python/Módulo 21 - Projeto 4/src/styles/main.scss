@@ -1,5 +1,13 @@
-$corDeFundo: rgb(61, 216, 211);
+@use "cores";
+@use "mixins";
+@use "hero";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $corDeFundo;
+    background-color: cores.$corDeFundo;
 }
