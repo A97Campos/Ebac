@@ -3,7 +3,7 @@
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: cores.$corTxt;
+    color: cores.$corSecundaria;
 }
 
 .text--big {
@@ -16,18 +16,18 @@
 
 .text--small {
     @include text(12px);
-    color: cores.$corTitulo;
+    color: cores.$corPrimaria;
 }
 
 .link-text {
     @include text(18px);
-    color: cores.$corTxt;
+    color: cores.$corSecundaria;
     text-decoration: underline;
 }
 
 @mixin title($fontSize: 40px){
     @include text($fontSize);
-    color: cores.$corTitulo;
+    color: cores.$corPrimaria;
 }
 
 .title--big {

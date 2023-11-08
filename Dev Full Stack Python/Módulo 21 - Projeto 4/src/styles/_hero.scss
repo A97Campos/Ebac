@@ -34,21 +34,6 @@
                     max-height: 60px;
                 }
 
-                button {
-                    display: block;
-                    width: 100%;
-                    padding: 8px;
-                    margin-top: 2vw;
-                    background-color: cores.$botao;
-                    border: none;
-                    color: cores.$corTitulo;
-                    text-transform: uppercase;
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: cores.$botaoHover;
-                    }
-                }
             }
         }
     }
