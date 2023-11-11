@@ -1,0 +1,45 @@
+.watch-anywere {
+
+    
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 5.6vw;
+
+        img {
+            max-width: 100%;
+        }
+
+        div {
+            padding: 0 2vw;
+
+            h2 {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+.filmes-series {
+    padding: 5.6vh;
+
+    &__content {
+        height: 100vh;
+        background: url(../../destino/images/fundo_rei_leao.png) center no-repeat;
+        background-size: cover;
+        position: relative;
+        
+        div {
+            position: absolute;
+            top: 0;
+            right: 5vw;
+            bottom: 0;
+            width: calc(50% - 5vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+}
