@@ -1,0 +1,65 @@
+@use "cores";
+
+.footer {
+    padding: 26px 8px;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        padding: 0 8px;
+
+        &__item {
+            padding: 8px 12px;
+
+            a {
+                color: cores.$corSecundaria;
+                
+
+                &:hover {
+                    color: cores.$corPrimaria;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+        color: cores.$corSecundaria;
+    }
+
+    &__logo {
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 18px;
+            height: 18px;
+        }
+
+        select {
+            background-color: transparent;
+            color: cores.$corSecundaria;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                color: cores.$corPrimaria;
+            }
+        }
+    }
+}

@@ -6,6 +6,8 @@
 @use "watch-anywere";
 @use "available-devices";
 @use "faq";
+@use "footer";
+@use "header";
 
 @font-face {
     font-family: Avenir;
@@ -26,6 +28,8 @@
     list-style-type: none;
     text-decoration: none;    
     font-family: Avenir, sans-serif;
+    letter-spacing: .2px;
+    line-height: 1.4;
 }
 
 body {
@@ -36,7 +40,6 @@ body {
     display: block;
     width: 100%;
     padding: 8px;
-    margin-top: 2vw;
     background-color: cores.$botao;
     border: none;
     color: cores.$corPrimaria;

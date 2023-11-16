@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="destino/css/main.css">
 </head>
 <body>
-    <header class="hero">
-        <section class="hero__content">
+
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="destino/images/disneyplus.svg" alt="Logo Disney">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item"><a href="#" class="button button--secondary">Assine Agora</a></li>
+
+                <li class="header__links__item"><a href="#" class="button button--dark">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
             <h1 class="hero__content__branding">
                 <img src="destino/images/disneyplus.svg" alt="Disney+">
             </h1>
@@ -37,8 +51,8 @@
             </ul>
 
             <p class="text--small">*O preço pode variar caso a assinatura seja feita através de outras plataformas.</p>
-        </section>
-    </header>
+        </div>
+    </section>
 
     <main>
         <section class="shows">
@@ -112,12 +126,17 @@
                 <img src="destino/images/tv_pc_tablet_celular.png" alt="tv_pc_tablet_celular">
                 <div>
                     <h2 class="title">Assista do seu jeito</h2>
-                    <p class="text--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ab tenetur hic sapiente similique beatae aliquid perferendis repudiandae odit repellat asperiores consequatur laboriosam provident commodi, eveniet possimus! Minus, minima? Repellat.</p>
+                    <p class="text--big">                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+                    </p>
                 </div>
             </article>
 
             <article class="filmes-series">
                 <div class="filmes-series__content">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="destino/images/fundo_rei_leao_celular.png">
+                        <img src="destino/images/fundo_rei_leao.png">
+                    </picture>
                     <div>
                         <h2 class="title">Baixe filmes e séries</h2>
                         <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
@@ -132,8 +151,8 @@
                 <li class="available-devices__list__item">
                     <img src="destino/images/dispositivos/computador.png" alt="Computador">
                     <h4 class="title--small">Computador</h4>
-                    <ul class="text">
-                        <li>chrome OS</li>
+                    <ul class="text--big">
+                        <li>Chrome OS</li>
                         <li>MacOS</li>
                         <li>PC Windows</li>
                     </ul>
@@ -141,7 +160,7 @@
                 <li class="available-devices__list__item">
                     <img src="destino/images/dispositivos/tv.png" alt="Computador">
                     <h4 class="title--small">TV</h4>
-                    <ul class="text">
+                    <ul class="text--big">
                         <li>Amazon Fire TV</li>
                         <li>Android TV</li>
                         <li>Apple TV</li>
@@ -154,7 +173,7 @@
                 <li class="available-devices__list__item">
                     <img src="destino/images/dispositivos/videogames.png" alt="Computador">
                     <h4 class="title--small">Videogames</h4>
-                    <ul class="text">
+                    <ul class="text--big">
                         <li>PS4</li>
                         <li>PS5</li>
                         <li>Xbox One</li>
@@ -164,8 +183,8 @@
                 </li>
                 <li class="available-devices__list__item">
                     <img src="destino/images/dispositivos/celular.png" alt="Computador">
-                    <h4 class="title--small">Celular e tablets</h4>
-                    <ul class="text">
+                    <h4 class="title--small">Celulares e tablets</h4>
+                    <ul class="text--big">
                         <li>Tablets Amazon Fire</li>
                         <li>Celulares e Tablets Android</li>
                         <li>iPhone e iPad</li>
@@ -178,8 +197,8 @@
             <h2 class="title">Perguntas Frequentes</h2>
             
             <div class="faq__questions__item">
-                <div class="faq__questions__item__question title--small" onclick="abrirFaq1()">O que está incluido no Disney+ ?
-                <img id="myImage" src="src/images/icones/icons8-soma-40.png" alt=""></div>
+                <div class="faq__questions__item__question" onclick="abrirFaq1()">O que está incluido no Disney+ ?
+                <img id="myImage" src="src/images/icones/icons8-soma-30.png" alt=""></div>
                 <div class="faq__questions__item__answer text--big" id="faq1"> 
                     <p>O Disney+ oferece:</p>
                     <ul>
@@ -194,8 +213,8 @@
             </div>
 
             <div class="faq__questions__item">
-                <div class="faq__questions__item__question title--small" onclick="abrirFaq2()">Já tem o Disney+ ou o Star+ e quer o Combo+ ?
-                <img id="myImage2" src="src/images/icones/icons8-soma-40.png" alt="">
+                <div class="faq__questions__item__question" onclick="abrirFaq2()">Já tem o Disney+ ou o Star+ e quer o Combo+ ?
+                <img id="myImage2" src="src/images/icones/icons8-soma-30.png" alt="">
                 </div>
                 <div class="faq__questions__item__answer text--big" id="faq2"> 
                     <p>Ao assinar o Combo+:</p>
@@ -211,8 +230,8 @@
             </div>
             
             <div class="faq__questions__item">
-                <div class="faq__questions__item__question title--small" onclick="abrirFaq3()">Quais formas de pagamento posso utilizar ?
-                <img id="myImage3" src="src/images/icones/icons8-soma-40.png" alt="">
+                <div class="faq__questions__item__question" onclick="abrirFaq3()">Quais formas de pagamento posso utilizar ?
+                <img id="myImage3" src="src/images/icones/icons8-soma-30.png" alt="">
                 </div>
                 <div class="faq__questions__item__answer text--big" id="faq3"> 
                     <p>Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple; Mercado Livre e provedores locais de TV, telefonia e internet.</p>
@@ -220,8 +239,8 @@
             </div>
 
             <div class="faq__questions__item">
-                <div class="faq__questions__item__question title--small" onclick="abrirFaq4()">Como posso ver conteúdo com classificação indicativa até 16 e 18 ?
-                <img id="myImage4" src="src/images/icones/icons8-soma-40.png" alt="">
+                <div class="faq__questions__item__question" onclick="abrirFaq4()">Como posso ver conteúdo com classificação indicativa até 16 e 18 ?
+                <img id="myImage4" src="src/images/icones/icons8-soma-30.png" alt="">
                 </div>
                 <div class="faq__questions__item__answer text--big" id="faq4"> 
                     <p>Para poder acessar o catálogo completo que inclui conteúdo com classificação indicativa até 16 e 18, todos os usuários do Disney+ na América Latina devem atualizar as configurações de controle parental do perfil. É possível restringir o conteúdo de cada perfil e também adicionar um PIN de bloqueio. Os usuários que preferirem manter a configuração atual vão continuar aproveitando o Disney+ com a classificação indicativa até 14, podendo alterá-la a qualquer momento em "Editar Perfis".</p>
@@ -229,9 +248,38 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="destino/images/disneyplus.svg" alt="Logo Disney+">
+            <ul class="footer__links text--small">
+                <li class="footer__links__item">
+                <div class="language-selector">
+                        <img src="destino/images/icones/globe.svg" alt="Globo">
+                        <select>
+                            <option selected>Português</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item"><a href="#">Termos e condições de Uso</a></li>
+                <li class="footer__links__item"><a href="#">Política de privacidade</a></li>
+                <li class="footer__links__item"><a href="#">Proteção de Dados no Brasil</a></li>
+                <li class="footer__links__item"><a href="#">Anúncios personalizados</a></li>
+                <li class="footer__links__item"><a href="#">Dispositivos compatíveis</a></li>
+                <li class="footer__links__item"><a href="#">Ajuda</a></li>
+                <li class="footer__links__item"><a href="#">Sobre o Disney+</a></li>
+            </ul>
+            <p class="text--small">® 2023 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
     
 
     <script src="src/script/shows.js"></script>
     <script src="src/script/faq.js"></script>
+    <script src="src/script/header.js"></script>
 </body>
 </html>

@@ -10,12 +10,26 @@
         justify-content: space-around;
         margin-top: 50px;
 
+        @media (max-width:992px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+
         &__items {
 
             text-align: center;
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
+
+            @media (max-width: 768px) {
+                padding: 60px 0 44px;
+            }
 
             &:nth-child(2){
                 background: url(../../destino/images/fundo_combo_plus.png) center no-repeat;

@@ -1,0 +1,76 @@
+@use 'cores';
+
+.header {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: cores.$corDeFundo;
+    
+    &--is-hidden {
+        background-color: transparent;
+
+        .header {
+            &__logo, &__links__item:first-child {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:768px) {
+            padding: 0 12px 0 20px;
+        }        
+    }
+    
+        &__logo {
+            width: 80px;
+            margin: 5px;
+            transition: opacity 0.5s ease;
+
+            @media (max-width:768px) {
+                max-width: 64px;
+            }
+        }
+    
+    .header__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item {
+            margin: 5px;
+            transition: opacity 0.5s ease;
+        }
+    }
+
+    .button {
+        @media (max-width:768px) {
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        &--dark {
+            background-color: rgba(0,0,0,.8);
+            border: 1px solid silver;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: cores.$corPrimaria;
+                color: cores.$corDeFundo;
+            }
+        }
+    }
+}
+
