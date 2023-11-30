@@ -1,0 +1,34 @@
+.event {
+    background-image: linear-gradient(#1b6ca7,#442bdb);
+    padding: 80px 0;
+
+    .container {
+        display: block;
+
+        .event__details {
+            &__title {
+                font-size: 1.1em;
+            }
+            &__text {
+                margin: 16px 0;
+            }
+        }
+
+        .event__image {
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .event {
+        .container{
+            display: flex;
+
+            .event__details {
+                margin-right: 40px;
+            }
+        }
+    }
+}

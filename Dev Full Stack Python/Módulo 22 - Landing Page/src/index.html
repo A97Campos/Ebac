@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.scss">
+
 </head>
 <body>
-    <h1>Olá Mundo!</h1>    
-    <img src="images/backend.png" alt="">
+    <header class="header">
+        <div class="container">
+            <img src="images/ebac_logo.svg" alt="Ebac Logo" class="header__logo">
+            <p class="header__text">O maior evento de tecnologia do Brasil começa em 10d 20h 30m 15s</p>
+
+            <div class="header__info">
+                <ul class="header__info__list">
+                    <li class="header__info__list__item"><b>Localização</b>Maracanã - Av. Pres. Castelo Branco - Maracanã - Rio de janeiro</li>
+                    <li class="header__info__list__item"><b>Preço</b>R$ 120,00</li>
+                    <li class="header__info__list__item"><b>Data</b>23/12/2023</li>
+                </ul>
+                <a href="#" class="button">Garanta sua vaga</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="event">
+            <div class="container">
+                <div class="event__details">
+                    <h2 class="event__details__title">Front-End</h2>
+                    <p class="event__details__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda adipisci ea amet. Reprehenderit sed, aperiam assumenda incidunt deserunt hic voluptatum corporis laborum sunt iste nisi, dicta atque odit minima?</p>
+                </div>
+                <img class="event__image" src="images/frontend.png" alt="Front-End">
+            </div>
+        </section>
+    </main>
+    
     
     <script src="scripts/main.js"></script>
 </body>
