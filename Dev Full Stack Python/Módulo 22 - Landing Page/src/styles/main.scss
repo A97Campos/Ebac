@@ -1,11 +1,12 @@
 @use 'header';
 @use 'event';
+@use 'colors';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: colors.$textColor;
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
     text-decoration: none;

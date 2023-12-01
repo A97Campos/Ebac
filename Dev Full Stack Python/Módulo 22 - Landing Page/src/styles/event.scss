@@ -1,6 +1,20 @@
-.event {
-    background-image: linear-gradient(#1b6ca7,#442bdb);
+@use 'colors';
+
+.event {    
     padding: 80px 0;
+
+    &--frontend {
+        background-image: linear-gradient(colors.$blue1,colors.$blue2);
+    }
+    &--ux-ui {
+        background-image: linear-gradient(colors.$blue2,colors.$pink);
+    }
+    &--data-science {
+        background-image: linear-gradient(colors.$pink,colors.$yellow);
+    }
+    &--backend {
+        background-image: linear-gradient(colors.$yellow,colors.$pink);
+    }
 
     .container {
         display: block;
@@ -11,6 +25,7 @@
             }
             &__text {
                 margin: 16px 0;
+                line-height: 22px;
             }
         }
 
@@ -25,9 +40,12 @@
     .event {
         .container{
             display: flex;
+            gap: 40px;
+        }
 
-            .event__details {
-                margin-right: 40px;
+        &--image-left {
+            .container {
+                flex-direction: row-reverse;
             }
         }
     }

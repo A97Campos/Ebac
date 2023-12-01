@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+
+    <!--Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!--AOS Animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--CSS-->
     <link rel="stylesheet" href="styles/main.scss">
 
 </head>
@@ -29,18 +35,48 @@
     </header>
 
     <main>
-        <section class="event">
-            <div class="container">
+        <section class="event event--frontend">
+            <div class="container" data-aos="fade-right">
                 <div class="event__details">
                     <h2 class="event__details__title">Front-End</h2>
-                    <p class="event__details__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda adipisci ea amet. Reprehenderit sed, aperiam assumenda incidunt deserunt hic voluptatum corporis laborum sunt iste nisi, dicta atque odit minima?</p>
+                    <p class="event__details__text">Desvende os segredos por trás do Front-End, a face visível da tecnologia. Profundize-se na criação de interfaces de usuário envolventes, aprenda sobre as últimas tecnologias de desenvolvimento web e descubra como a estética e a usabilidade se unem para criar experiências digitais excepcionais.</p>
                 </div>
                 <img class="event__image" src="images/frontend.png" alt="Front-End">
             </div>
         </section>
+        <section class="event event--ux-ui event--image-left">
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">UX/UI</h2>
+                    <p class="event__details__text">Adentre o fascinante universo da User Experience (UX) e User Interface (UI) design. Explore como o design centrado no usuário pode transformar produtos digitais, desde a concepção até a implementação. Descubra as práticas mais recentes para criar interfaces intuitivas que conquistam e retêm os usuários.
+                    </p>
+                </div>
+                <img class="event__image" src="images/ui-ux.png" alt="UX/UI">
+            </div>
+        </section>
+        <section class="event event--data-science">
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Data Science</h2>
+                    <p class="event__details__text">Embarque em uma jornada pelos bastidores da Data Science, desvendando os mistérios dos dados que impulsionam a tomada de decisões inteligentes. Explore técnicas avançadas de análise de dados, aprendizado de máquina e inteligência artificial. Descubra como os insights gerados pela ciência de dados podem transformar negócios e impulsionar a inovação.
+                    </p>
+                </div>
+                <img class="event__image" src="images/data.png" alt="Data Science">
+            </div>
+        </section>
+        <section class="event event--backend event--image-left">
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">Back-End</h2>
+                    <p class="event__details__text">Explore o coração pulsante por trás de cada aplicativo e site: o Back-End. Aprofunde-se nas tecnologias que sustentam e impulsionam as funcionalidades dos sistemas, desde o gerenciamento de bancos de dados até o desenvolvimento de APIs robustas. Conheça as melhores práticas para garantir a escalabilidade e a segurança dos sistemas back-end.
+                    </p>
+                </div>
+                <img class="event__image" src="images/backend.png" alt="Back-End">
+            </div>
+        </section>
     </main>
     
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
