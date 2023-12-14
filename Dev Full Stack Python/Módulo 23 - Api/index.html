@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form>
+        <h2>Dados básicos</h2>
+        <div>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="sobrenome" placeholder="Sobrenome">
+            <input type="text" id="email" placeholder="E-mail">
+        </div>
+        <h2>Dados da entrega</h2>
+        <div id="dadosEntrega">
+            <input type="text" id="cep" placeholder="CEP">
+            <button type="submit" id="pesquisar">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+            </button>
+            <input type="text" id="endereco" placeholder="Endereço">
+            <input type="text" id="numero" placeholder="Número">
+        </div>
+
+        <button type="submit" id="enviar">Enviar pedido</button>
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
