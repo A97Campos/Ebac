@@ -1,4 +1,47 @@
-document.addEventListener('DOMContentLoaded', function(){
+const cep = document.getElementById('cep');
+const pesquisar = document.getElementById('pesquisar');
+const endereco = document.getElementById('endereco');
+
+const fetchApi = (value) => {
+    const result = fetch(`https://viacep.com.br/ws/${value}/json`)
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data);
+        return data;
+    })
+    .catch((error => {
+        console.error('Erro ao buscar o CEP:', error);
+        return null;
+    }))
+    return result;
+}
+
+pesquisar.addEventListener('click', async(event) => {
+    event.preventDefault();
+    const json = await fetchApi(cep.value);
+
+    if (json){
+
+        const logradouro = json.logradouro;
+        const bairro = json.bairro;
+        const cidade = json.localidade;
+        const estado = json.uf;
+        endereco.innerHTML = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+    }
+})
+
+var cleave = new Cleave('#cep', {
+    delimiter: '-',
+    blocks: [5, 3],
+    numericOnly: true
+}); 
+
+
+
+
+
+/*document.addEventListener('DOMContentLoaded', function(){
+    
     document.getElementById('pesquisar').addEventListener('click', function(){
         const xhttp = new XMLHttpRequest();
         const cep = document.getElementById('cep').value;
