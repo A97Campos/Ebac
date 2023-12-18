@@ -1,11 +1,57 @@
-document.addEventListener('DOMContentLoaded', function(){
-    document.getElementById('pesquisar').addEventListener('click', function(){
-        const xhttp = new XMLHttpRequest();
-        const cep = document.getElementById('cep').value;
-        const endpoint = `viacep.com.br/ws/${cep}/json/`;
+const cep = document.getElementById('cep');
+const pesquisar = document.getElementById('pesquisar');
+const endereco = document.getElementById('endereco');
 
-        xhttp.open('GET', endpoint);
-        xhttp.send();
+const fetchApi = (value) => {
+    const result = fetch(`https://viacep.com.br/ws/${value}/json`)
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data);
+        return data;
+    })
+    return result;
+}
+
+pesquisar.addEventListener('click', async(event) => {
+    event.preventDefault();
+    const json = await fetchApi(cep.value);
+
+    if (json){
+
+        const logradouro = json.logradouro;
+        const bairro = json.bairro;
+        const cidade = json.localidade;
+        const estado = json.uf;
+        endereco.innerHTML = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+    }
+})
+
+var cleave = new Cleave('#cep', {
+    delimiter: '-',
+    blocks: [5, 3],
+    numericOnly: true
+}); 
+
+
+
+
+
+/*document.addEventListener('DOMContentLoaded', function(){
+    
+    document.getElementById('pesquisar').addEventListener('click', function(){
+        const cep = document.getElementById('cep').value;
+        const endereco = document.getElementById('endereco');
+        fetch(`https://viacep.com.br/ws/${cep}/json`)
+            .then(function(res){
+                return res.json();
+            })
+            .then(function(json){
+                const logradouro = json.logradouro;
+                const bairro = json.bairro;
+                const cidade = json.localidade;
+                const estado = json.uf;
+                endereco.innerHTML = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+            })
     })
 
     var cleave = new Cleave('#cep', {
@@ -15,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });    
 })
 
-/*$(document).ready(function(){
+$(document).ready(function(){
     $('#pesquisar').click(function(){
         const cep = $('#cep').val();
         const endpoint = `https://viacep.com.br/ws/${cep}/json`;
