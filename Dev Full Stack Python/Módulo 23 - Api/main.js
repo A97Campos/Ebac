@@ -6,13 +6,11 @@ const fetchApi = (value) => {
     const result = fetch(`https://viacep.com.br/ws/${value}/json`)
     .then((res) => res.json())
     .then((data) => {
-        console.log(data);
         return data;
     })
-    .catch((error => {
-        console.error('Erro ao buscar o CEP:', error);
-        return null;
-    }))
+    .catch((erro) => {
+        console.log('Cep não encontrado, tente novamente !' + erro.message);
+    })
     return result;
 }
 
@@ -21,12 +19,11 @@ pesquisar.addEventListener('click', async(event) => {
     const json = await fetchApi(cep.value);
 
     if (json){
-
         const logradouro = json.logradouro;
         const bairro = json.bairro;
         const cidade = json.localidade;
         const estado = json.uf;
-        endereco.innerHTML = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+        endereco.value = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
     }
 })
 
