@@ -1,3 +1,4 @@
+//Objeto
 const carroDoJoao = {
     modelo: 'Fiesta',
     fabricante: 'Ford',
@@ -18,8 +19,15 @@ const carroDoAndrew = {
     }
 }
 
-function carro(modelo, fabricante, anoModelo, anoFabricacao){
-    this.modelo = modelo;
+/*console.log(carroDoJoao);
+console.log(carroDoAndrew);*/
+
+/* ------------------------ */
+
+//Obejto - função construtora
+function Carro(proprietario, modelo, fabricante, anoModelo, anoFabricacao){
+    this.proprietario = proprietario;
+    this.modelo = modelo; //this faz referncia a function carro.
     this.fabricante = fabricante;
     this.anoModelo = anoModelo;
     this.anoFabricacao = anoFabricacao;
@@ -28,13 +36,15 @@ function carro(modelo, fabricante, anoModelo, anoFabricacao){
     }
 }
 
-console.log(carroDoJoao);
-console.log(carroDoAndrew);
+const carroDoJoao2 = new Carro ("João", "Fiesta", "Ford", 2021, 2020);
+const carroDoAndrew2 = new Carro("Andrew","C4 Cactus", "Citroen", 2022, 2021);
 
-const carrodoFulano = new carro('Onix', 'Gm', 2020, 2019);
+console.log(carroDoJoao2);
+console.log(carroDoAndrew2);
 
-console.log(carrodoFulano);
+/* ------------------------------- */
 
+//Tipos de Dados
 const nome = 'Andrew';
 const idade = 26;
 const MaiorDeIdade = true;
