@@ -1,47 +1,29 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+const nome = "Andrew";
+const profissao = {
+  nome: "Andrew",
+  profissao: "Programador"
+};
+function dizOi(nome){
+  return `${nome} diz Oi`
+}
+
+const imagem = "https://upload.wikimedia.org/wikipedia/pt/8/8d/Batman_por_Jim_Lee.jpg";
+
+const estaAutorizado = false;
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <h1>Olá mundo</h1>
+  <h2>{{ nome }}</h2>
+  <h3>{{ profissao.profissao }}</h3>
+  <h4>{{ dizOi("Lorenzo") }}</h4>
+  <img :src="imagem" alt="img">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <h1 v-if="estaAutorizado">Bem vindo</h1>
+  <h1 v-else>Não esta autorizado</h1>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
