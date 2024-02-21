@@ -1,5 +1,8 @@
 <script setup>
 import { reactive } from 'vue';
+import cabecalho from './components/cabecalho.vue';
+import formulario from './components/formulario.vue';
+import listaDeTarefas from './components/listaDeTarefas.vue';
 
 
 const estado = reactive({
@@ -60,27 +63,15 @@ const cadastraTarefa = () => {
 
 <template>
   <header>
-    <h1>Minhas tarefas</h1>
-    <p>voce possui {{ getTarefasPendentes().length }} tarefas pendentes</p>
+    <!--Cabeçalho-->
+    <cabecalho :tarefas-pendentes="getTarefasPendentes().length" />
   </header>
   <main>
-    <form @submit.prevent="cadastraTarefa">
-      <input :value="estado.tarefaTemp" @change="evento => estado.tarefaTemp = evento.target.value" type="text" placeholder="Digite aqui a tarefa" required>
-      <button type="submit">Cadastrar</button>
-      <select @change="evento => estado.filtro = evento.target.value">
-        <option value="todas">Todas as tarefas</option>
-        <option value="pendentes">Pendentes</option>
-        <option value="finalizadas">Finalizadas</option>
-      </select>
-    </form>
-
+    <!--Formulário-->
+    <formulario :trocar-filtro="evento => estado.filtro = evento.target.value" :tarefa-temp="estado.tarefaTemp" :edita-tarefa-temp="evento => estado.tarefaTemp = evento.target.value" :cadastra-tarefa="cadastraTarefa"/>
     <section>
-      <ul>
-        <li v-for="tarefa in getTarefasFiltradas()">
-          <input @change="evento => tarefa.finalizada = evento.target.checked" :checked="tarefa.finalizada" :id="tarefa.titulo" type="checkbox" >
-          <label :class="{done: tarefa.finalizada}" :for="tarefa.titulo">{{ tarefa.titulo }}</label>
-        </li>
-      </ul>
+      <!--Lista de Tarefas-->
+      <listaDeTarefas :tarefas="getTarefasFiltradas()"/>
     </section>
   </main>
 </template>
@@ -99,41 +90,7 @@ header {
   padding: 40px;
 }
 
-form input, form select {
-  display: block;
-  width: 90vw;
-  padding: 8px;
-  margin-top: 16px;
-  border-radius: 5px;
-  border: 2px solid rgb(218, 215, 215);
-}
-
-button {
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 5px;
-  margin-top: 16px;
-  background-color: rgb(71, 71, 240);
-  color: #fff;
-  border: none;
-  outline: none;
-}
-
 section {
   margin-top: 16px;
-}
-
-section ul li{
-  border: 2px solid rgb(218, 215, 215);
-  border-radius: 5px;
-  padding: 8px;
-}
-
-section ul li input {
-  margin-right: 8px;
-}
-
-.done {
-  text-decoration: line-through;
 }
 </style>
