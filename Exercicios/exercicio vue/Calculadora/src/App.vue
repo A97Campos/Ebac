@@ -54,8 +54,9 @@ const estado = reactive({
 <style scoped>
 form {
   background: linear-gradient(#3E7FF0, #3E47F0);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px;
 }
 
 form section {
@@ -71,6 +72,12 @@ form select {
   border-radius: 5px;
   border: none;
   outline: none;
+}
+
+form input {
+  max-width: 200px;
+  width: 100%;
+
 }
 
 form select {
