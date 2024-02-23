@@ -1,6 +1,6 @@
 # Calculadora
 
-This template should help get you started developing with Vue 3 in Vite.
+O exercício proposto foi o de uma calculadora aritmética simples, onde deveria conter 2 campos para inserir números, 1 campo tipo select para escolher qual operação aritmética usar e alterando os valores o cálculo já deveria ser realizado sem precisar clicar em nenhum botão.
 
 ## Recommended IDE Setup
 
