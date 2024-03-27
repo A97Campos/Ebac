@@ -4,7 +4,7 @@ const ReposList = () => {
     const [repos, setRepos] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.github.com/users/a97campos/repos')
+        fetch(`https://api.github.com/users/${idGitHUb}/repos`)
         .then(res => res.json())
         .then(resJson => {
             setRepos(resJson);
@@ -15,8 +15,13 @@ const ReposList = () => {
         <ul>
             {repos.map(repositorio => (
                 <li key={repositorio.id}>
-                    <div><b>Nome:</b>{repositorio.name}</div>
-                    <div><b>Url:</b><a href={repositorio.html_url} target="_blank">Visitar no GitHub</a></div>
+                    <p>
+                        <b>Nome:</b> {repositorio.name}
+                    </p>
+                    <p><b>Linguagem:</b> {repositorio.language}</p>
+                    <p>
+                        <b>Url:</b><a href={repositorio.html_url} target="_blank">Visitar no GitHub</a>
+                    </p>
                 </li>
             ))}
         </ul>

@@ -1,44 +1,30 @@
-import { PI } from "./teste";
+import { useState } from "react";
 import Perfil from "./components/perfil/index";
 import Formulario from "./components/formulario";
 import ReposList from "./components/reposList";
-import { useState } from "react";
+
+import './global.css'
 
 function App() {
-  const nome = 'Andrew';
-
-  function digitaNome() {
-    return nome;
-  };
-
-  const pessoa = {
-    nome: 'José',
-  }
-
-  let estaDeDia = true;
 
   const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true);
+  const [idGitHub, setIdGitHub] = useState('')
 
   return (
     <>
-    <h1>Olá Mundo</h1>
-    <h2>Subtítulo</h2>
-    <p>{digitaNome()}</p>
-    <p>{nome}</p>
-    <p>Olá, {pessoa.nome}</p>
-    <p>{estaDeDia === true ? 'Bom dia':'Boa tarde'}</p>
-    {PI}
+    <input type="text" placeholder="Digite o Id GitHub" onBlur={(e) => setIdGitHub(e.target.value)}/>
 
-    <Perfil nome={'Andrew'} endereco={'https://github.com/A97Campos.png'}/>
-
-    <ReposList />
-
-    {formularioEstaVisivel && <Formulario />}
-    
-    <button type="button" onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)}>Toggle</button>
-    
+    {idGitHub.length > 4 && (
+      <> 
+      <Perfil idGitHub={idGitHub} endereco={`https://github.com/${idGitHub}.png`}/>
+      <ReposList idGitHub={idGitHub}/>
+  
+      </>
+    )}   
     </>
     
+    //<button type="button" onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)}>Toggle</button>
+    //{formularioEstaVisivel && <Formulario />}
     )
 }
 

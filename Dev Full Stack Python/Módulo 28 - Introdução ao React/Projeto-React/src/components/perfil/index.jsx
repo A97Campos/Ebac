@@ -1,11 +1,11 @@
-import './perfil.css';
+import styles from './Perfil.module.css'
 
-const Perfil = ({nome, endereco}) => {
+const Perfil = ({idGitHub}) => {
     return (
-        <div>
-            <img className='perfil__avatar' src={endereco} />
-            <h3 className='perfil__titulo'>{nome}</h3>
-        </div>
+        <header className={styles.header}>
+            <img className={styles.avatar} src={`https://github.com/${idGitHub}.png`} />
+            <h1 className={styles.titulo}>{idGitHub}</h1>
+        </header>
     )
 }
 export default Perfil;

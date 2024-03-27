@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Graus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h1>Conversor</h1>
+        <div id="content">
+            <div>
+                <label for="celsius">Celsius:</label>
+                <input type="text" id="celsius">
+            </div>
+            <div>
+                <label for="fahrenheit">Fahrenheit:</label>
+                <input type="text" id="fahrenheit">
+            </div>
+            <button type="submit" onclick="converter()">Converter</button>
+        </div>
+
+        <p id="respostafah"></p>
+        <p id="respostacel"></p>
+    </main>
+    
+
+    <script>
+        function converter() {
+            let celsiusVal = document.getElementById("celsius");
+            let fahrenheitVal = document.getElementById("fahrenheit")
+            let fahrenheit = (celsiusVal.value * 9/5) + 32;
+            let celsius = Math.floor((fahrenheitVal.value - 32) * 5/9);
+            let respostacel = document.getElementById("respostacel");
+            let respostafah = document.getElementById("respostacel");
+
+            if (celsiusVal.value > 0){
+                respostacel.innerHTML = `A conversão de ${celsiusVal.value}°C para Fahrenheit é: ${fahrenheit}°F.`
+            } else {
+                respostafah.innerHTML = `A conversão de ${fahrenheitVal.value}°F para Celsius é: ${celsius}°C.`
+            }
+            
+            celsiusVal.value = "";
+            fahrenheitVal.value = "";
+            respostacel.value = "";
+            respostafah.value = "";
+
+        }
+
+    </script>
+</body>
+</html>
