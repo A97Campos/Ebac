@@ -21,9 +21,4 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 128px auto;
   column-gap: 56px;
-
-  img {
-    max-width: 100%;
-    border-radius: 50%;
-  }
 `
