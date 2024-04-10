@@ -5,10 +5,15 @@ const EstiloGlobal = createGlobalStyle`
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  list-style-type: none;
 }
 
 body {
-  padding-top: 80px;
+  padding: 80px 0;
+
+  @media (max-width: 768px) {
+    padding-top: 16px;
+  }
 }
 `
 
@@ -19,6 +24,11 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 128px auto;
+  grid-template-columns: 160px auto;
   column-gap: 56px;
+
+  @media (max-width: 768px) {
+    display: block;
+    max-width: 80%;
+  }
 `
