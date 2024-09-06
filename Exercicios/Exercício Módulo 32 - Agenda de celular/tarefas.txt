@@ -3,6 +3,7 @@ instalar as depedências
     react-redux
     react-router
     styled components ok
+    react icons
 
 criar a página de contatos
     criar contato de famosos e colocar links (icons) para as redes sociais
