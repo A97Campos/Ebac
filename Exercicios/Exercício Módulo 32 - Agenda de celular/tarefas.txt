@@ -1,9 +1,9 @@
 instalar as depedências
     React ok
-    react-redux
+    react-redux 
     react-router
     styled components ok
-    react icons
+    react icons ok
 
 criar a página de contatos
     criar contato de famosos e colocar links (icons) para as redes sociais

@@ -1,27 +1,16 @@
-import * as S from "./style"
+import * as S from './style'
+import FiltroContato from '../../components/FiltroContato/index';
 
 export const BarraLateral = () => (
     <S.Aside>
+        <S.Titulo>Filtre sua pesquisa</S.Titulo>
         <S.InputPesquisar type="text" placeholder="Digite para buscar" />
-        <S.Selecao>
-            <S.Titulo>Filtre sua pesquisa</S.Titulo>
-            <div>
-                <input type="radio" name="geral" id="geral" />
-                <label htmlFor="geral">Geral</label>
-            </div>
-            <div>
-                <input type="radio" name="familia" id="familia" /> 
-                <label htmlFor="familia">Família</label>
-            </div>
-            <div>
-                <input type="radio" name="amigos" id="amigos"/>
-                <label htmlFor="amigos">Amigos</label>   
-            </div>
-            <div>
-                <input type="radio" name="trabalho" id="trabalho" />
-                <label htmlFor="trabalho">Trabalho</label>
-            </div>
-        </S.Selecao>
-        <S.Botao type="button">Adicionar novo contato</S.Botao>
+        <form>
+            <FiltroContato legenda='Geral' />
+            <FiltroContato legenda='Família' />
+            <FiltroContato legenda='Trabalho' />
+            <FiltroContato legenda='Amigos' ativo />
+        </form>
+        <S.Botao type="button">Adicionar novo contato</S.Botao>  
     </S.Aside>
 )

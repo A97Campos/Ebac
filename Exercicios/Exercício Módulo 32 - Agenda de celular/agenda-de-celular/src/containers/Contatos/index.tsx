@@ -1,31 +1,16 @@
-import { BsFillTelephoneFill, BsEnvelopeFill, BsPenFill, BsEraserFill, BsTrash3Fill } from 'react-icons/bs';
+import CardContato from "../../components/CardContato"
+import { ContatosMaps } from "./maps"
 import * as S from "./style"
 
 export const Contato = () => (
     <S.Main>
-    <S.Card>
-        <S.Nome>
-            <p>Neymar Junior</p>
-            <S.Botao>
-                <BsPenFill />
-            </S.Botao>
-            <S.Botao>
-                <BsEraserFill />
-            </S.Botao>            
-            <S.Botao>
-                <BsTrash3Fill />
-            </S.Botao>            
-        </S.Nome>
-        <S.Text>
-            <BsFillTelephoneFill />
-            <p>Telefone</p>
-        </S.Text>
-        <S.Text>
-            <BsEnvelopeFill /> 
-            <p>e-mail</p>
-        </S.Text>      
-        
-    </S.Card>
-    
+            {ContatosMaps.map((c) => (
+                <CardContato 
+                    nome={c.nome}
+                    status={c.status}
+                    telefone={c.telefone}
+                    email={c.email}
+                />
+            ))}
     </S.Main>
 )
