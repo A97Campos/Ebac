@@ -19,6 +19,7 @@ export const Nome = styled.div`
 
 export const NomeTitulo = styled.h2`
     font-size: 28px;
+    white-space: nowrap;
 `
 
 export const Text = styled.div`
@@ -33,6 +34,7 @@ export const Input = styled.input`
     color: white;
     border: none;
     background: transparent;
+    width: 100%;
 `
 
 export const Botao = styled.button`
@@ -42,4 +44,10 @@ export const Botao = styled.button`
     color: #fff;
     cursor: pointer;
     margin-left: 8px;
+    
+`
+
+export const P = styled.p`
+    margin-bottom: 12px;
+    font-size: 12px;
 `

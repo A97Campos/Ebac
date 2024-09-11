@@ -1,8 +1,9 @@
 import * as S from "./style"
+import * as enums from "../../utils/enums"
 
 export type Props = {
     ativo?: boolean
-    legenda: string
+    legenda: enums.CicloSocial
 }
 
 const FiltroContato = ({ ativo, legenda }: Props) => (          
