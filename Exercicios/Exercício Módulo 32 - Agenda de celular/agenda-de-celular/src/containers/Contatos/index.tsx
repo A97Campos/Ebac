@@ -7,9 +7,15 @@ import { RootReducer } from "../../store"
 
 export const Contato = () => {
     const { itens } = useSelector((state: RootReducer) => state.contatos)
+    const { termo } = useSelector((state: RootReducer) => state.filtro)
+
+    const filtraContatos = () => {
+        return itens.filter((item) => item.nome.toLowerCase().search(termo) >= 0)
+    }
+
     return (
-        <S.Main>
-            {itens.map((c) => (
+        <S.Main>            
+            {filtraContatos().map((c) => (
                 <CardContato 
                     id={c.id}
                     nome={c.nome}
