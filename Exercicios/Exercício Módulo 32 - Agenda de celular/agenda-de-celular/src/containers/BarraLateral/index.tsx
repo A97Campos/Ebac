@@ -24,7 +24,7 @@ export const BarraLateral = () => {
             <FiltroContato legenda={enums.CicloSocial.TRABALHO} />
             <FiltroContato legenda={enums.CicloSocial.AMIGOS} ativo />
         </form>
-        <S.Botao type="button">Adicionar novo contato</S.Botao>  
+        <S.Botao to='/novo-contato'>Adicionar</S.Botao>  
     </S.Aside>
     )
 }

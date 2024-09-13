@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import variaveis from "../../styles/variaveis"
 
@@ -19,12 +20,14 @@ export const InputPesquisar = styled.input`
     border-radius: 8px;
     width: 100%;
 `
-export const Botao = styled.button`
+export const Botao = styled(Link)`
+    display: block;
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     background-color: ${variaveis.verde};
     color: #fff;
-    border: none;
 `
