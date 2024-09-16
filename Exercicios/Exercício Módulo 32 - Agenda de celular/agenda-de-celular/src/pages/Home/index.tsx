@@ -1,10 +1,13 @@
 import { BarraLateral } from "../../containers/BarraLateral"
 import { Contato } from "../../containers/Contatos"
+import { Container } from "../../styles"
 
 const Home = () => (
     <>
-        <BarraLateral />
-        <Contato />
+        <Container>
+            <BarraLateral />
+            <Contato />
+        </Container>
     </>
 )
 

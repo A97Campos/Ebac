@@ -20,9 +20,7 @@ function App() {
   return (
     <Provider store={store}>
       <EstiloGlobal />
-      <Container>
         <RouterProvider router={rotas} />
-      </Container>
     </ Provider>
   );
 }

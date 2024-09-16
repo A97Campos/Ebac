@@ -1,5 +1,7 @@
+import { AdicionarContato } from "../../containers/AdicionarContato"
+
 const NovoContato = () => (
-    <h1>Novo contato</h1>
+    <AdicionarContato />
 )
 
 export default NovoContato
